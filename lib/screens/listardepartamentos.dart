@@ -1,5 +1,5 @@
 //https://www.datos.gov.co/resource/vcjz-niiq.json
-
+//https://github.com/dalzlad/consumoAPI.git
 import 'package:flutter/material.dart';
 import 'package:get_api_0/models/departamentos.dart';
 import 'dart:convert';
@@ -40,7 +40,7 @@ class _ListarDepartamentosState extends State<ListarDepartamentos> {
           } else if (snapshot.hasError) {
             return Center(child: Text('Error: ${snapshot.error}'));
           } else if (!snapshot.hasData || snapshot.data!.isEmpty) {
-            return Center(child: Text('No users found'));
+            return Center(child: Text('No se encontraron departamentos'));
           } else {
             return ListView.builder(
               itemCount: snapshot.data!.length,

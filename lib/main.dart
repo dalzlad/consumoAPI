@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get_api_0/screens/listardepartamentos.dart';
+import 'package:get_api_0/screens/registrar.dart';
 
 void main() {
   runApp(const MainApp());
@@ -11,7 +12,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: ListarDepartamentos(),
+      home: Registrar(),
     
     );
   }
